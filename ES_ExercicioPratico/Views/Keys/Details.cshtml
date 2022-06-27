@@ -1,0 +1,77 @@
+﻿@model ES_ExercicioPratico.Models.Key
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Key</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Number1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Number1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Number2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Number2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Number3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Number3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Number4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Number4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Number5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Number5)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Star1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Star1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Star2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Star2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.User)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IsRandomKey)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsRandomKey)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>

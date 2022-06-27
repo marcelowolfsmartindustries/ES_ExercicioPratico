@@ -1,0 +1,76 @@
+﻿@model ES_ExercicioPratico.Models.Key
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Criar</h1>
+
+<h4>Key</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+
+            <input asp-for="IsRandomKey" type="hidden" value=@Model.IsRandomKey/>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Number1" class="control-label"></label>
+                <input readonly=@Model.IsRandomKey asp-for="Number1" class="form-control" />
+                <span asp-validation-for="Number1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Number2" class="control-label"></label>
+                <input  readonly=@Model.IsRandomKey asp-for="Number2" class="form-control" />
+                <span asp-validation-for="Number2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Number3" class="control-label"></label>
+                <input  readonly=@Model.IsRandomKey asp-for="Number3" class="form-control" />
+                <span asp-validation-for="Number3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Number4" class="control-label"></label>
+                <input  readonly=@Model.IsRandomKey asp-for="Number4" class="form-control" />
+                <span asp-validation-for="Number4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Number5" class="control-label"></label>
+                <input  readonly=@Model.IsRandomKey asp-for="Number5" class="form-control" />
+                <span asp-validation-for="Number5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Star1" class="control-label"></label>
+                <input  readonly=@Model.IsRandomKey asp-for="Star1" class="form-control" />
+                <span asp-validation-for="Star1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Star2" class="control-label"></label>
+                <input readonly=@Model.IsRandomKey asp-for="Star2" class="form-control" />
+                <span asp-validation-for="Star2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedAt" class="control-label"></label>
+                <input type="date" asp-for="CreatedAt" class="form-control" />
+                <span asp-validation-for="CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User" class="control-label"></label>
+                <input asp-for="User" class="form-control" />
+                <span asp-validation-for="User" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
